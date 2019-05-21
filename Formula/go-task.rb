@@ -1,7 +1,7 @@
 # taken from https://github.com/go-task/homebrew-tap/blob/master/Formula/go-task.rb
 # and adapted with Linux support
-LATEST_RELEASE="v2.3.0".freeze
-LATEST_RELEASE_SHA256="734507e36ab6c03fa3a10560d1fc7d4d5d943650acbd4635b35a40bd05821b13".freeze
+LATEST_RELEASE="v2.5.2".freeze
+LATEST_RELEASE_SHA256="d97949bcd590eb01f77f8b10fdce8f5add40864d7a9f7a93bf3916198360734f".freeze
 
 class GoTask < Formula
   desc "Task runner / simpler Make alternative written in Go"
@@ -10,7 +10,7 @@ class GoTask < Formula
   version LATEST_RELEASE[1,LATEST_RELEASE.length]
   sha256 LATEST_RELEASE_SHA256
 
-    def install
+  def install
     bin.install "task"
   end
 

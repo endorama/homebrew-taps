@@ -1,11 +1,13 @@
-VERSION="1.0.0"
-
+LATEST_RELEASE = "v1.2.0".freeze
+LATEST_VERSION = LATEST_RELEASE.gsub(/^v/, "").freeze
+LATEST_VERSION_SHA256 = "876ecb0127227435d8564a7740a0e439c09dec71247ab0e620497b687ac9a71c".freeze
 
 class GotunlVpn < Formula
   desc "Command line client for Pritunl"
   homepage "https://github.com/cghdev/gotunl-vpn"
-  url "https://github.com/cghdev/gotunl-vpn/releases/download/1.0.0/gotunl_1.0.0-linux-x64.zip"
-  sha256 "ff29f6f2836c180adb2e20d9afe0b4ef4e20affb265f9272c3d631c7900804dc"
+  url "https://github.com/cghdev/gotunl-vpn/releases/download/#{LATEST_VERSION}/gotunl-linux-amd64.zip"
+  version LATEST_RELEASE
+  sha256 LATEST_VERSION_SHA256
 
   def install
     prefix.install "gotunl"

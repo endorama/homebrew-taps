@@ -2,7 +2,7 @@ LATEST_RELEASE = "v1.2.1".freeze
 LATEST_VERSION = LATEST_RELEASE.gsub(/^v/, "").freeze
 LATEST_VERSION_SHA256 = "36f24d824b3440ae76a314bae95048e2c79e54912254da82a9f00c353dd4829d".freeze
 
-class GotunlVpn < Formula
+class Gotunl < Formula
   desc "Command line client for Pritunl"
   homepage "https://github.com/cghdev/gotunl"
   url "https://github.com/cghdev/gotunl/releases/download/#{LATEST_VERSION}/gotunl-linux-amd64.zip"

@@ -21,7 +21,6 @@ class Gitsh < Formula
 
   def install
     set_ruby_path
-    set_architecture
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
@@ -41,9 +40,5 @@ class Gitsh < Formula
     else
       ENV['RUBY'] = SYSTEM_RUBY_PATH
     end
-  end
-
-  def set_architecture
-    ENV['READLINE_ARCH'] = "-arch #{Linux.preferred_arch}"
   end
 end

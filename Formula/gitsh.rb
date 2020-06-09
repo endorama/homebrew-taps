@@ -1,5 +1,6 @@
 require 'formula'
 
+# From https://github.com/thoughtbot/homebrew-formulae/blob/master/Formula/gitsh.rb
 class Gitsh < Formula
   SYSTEM_RUBY_PATH = '/usr/bin/ruby'
   HOMEBREW_RUBY_PATH = "#{HOMEBREW_PREFIX}/bin/ruby"

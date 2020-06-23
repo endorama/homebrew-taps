@@ -1,5 +1,5 @@
-LATEST_RELEASE="v0.9.4".freeze
-LATEST_RELEASE_SHA256="02ecf34ea840552926d3273bcf07f08658c3c5481e8f1630b48eb7c841f4ed8b".freeze
+LATEST_RELEASE="v1.1.1".freeze
+LATEST_RELEASE_SHA256="b612b11ef0c21a62c71f2ce4a21c6621784837ce6f59ca264eb377efcddc4f8e".freeze
 
 class OnepasswordCli < Formula
   desc "Go ahead. Forget your passwords."
